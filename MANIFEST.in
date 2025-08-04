@@ -1,0 +1,2 @@
+recursive-include nephila_logging *
+global-exclude */__pycache__/*

@@ -1,5 +1,7 @@
-# Setup files
-*.env
+# Setup
+*.egg-info
+build/
+dist/
 
 # Auto-generated files
 **/__pycache__/
