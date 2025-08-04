@@ -1,7 +1,5 @@
 """
-Nephila - Logging
-
-Implements the functionality for internal Nephila logs.
+Namespace for the functions that retrieves the app loggers.
 """
 
 
