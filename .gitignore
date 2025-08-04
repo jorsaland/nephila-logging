@@ -11,4 +11,4 @@ logs/
 # Local files
 env/
 local/
-local_test.py
+local.py
