@@ -1,0 +1,12 @@
+# Setup files
+*.env
+
+# Auto-generated files
+**/__pycache__/
+logs/
+.pid
+
+# Local files
+env/
+local/
+local_test.py
