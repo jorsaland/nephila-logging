@@ -33,14 +33,13 @@ class BaseLoggerManager:
     def initialize(cls, *, logger_name: str, logger_format: str, logging_level: str, tzone: timezone):
 
         """
-        Sets up the logger.
+        Sets up the logger. If it is already set, nothing happens.
         """
 
         validate_logging_level(logging_level)
         validate_timezone(tzone)
 
         if isinstance(cls._logger, Logger):
-            warnings.warn(f"The logger '{logger_name}' has already been initialized.")
             return
 
         cls._logger = build_logger(
