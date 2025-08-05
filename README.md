@@ -1,11 +1,11 @@
-# Nephila &#128376; - Logger (0.0)
+# Nephila &#128376; - Logging (0.0)
 
 ## Commands
 
 ### Install
 
 ```
-pip install [path-to-package]
+pip install [path-to-this-package]
 ```
 
 ## New features
