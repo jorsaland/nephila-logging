@@ -5,7 +5,6 @@ Defines the base logger manager from which other logger managers inherit.
 
 from datetime import timezone
 from logging import Logger
-import warnings
 
 
 from .._builder._build_logger import build_logger
