@@ -38,15 +38,13 @@ class BaseLoggerManager:
         validate_logging_level(logging_level)
         validate_timezone(tzone)
 
-        if isinstance(cls._logger, Logger):
-            return
-
-        cls._logger = build_logger(
-            logger_name = logger_name,
-            logger_format = logger_format,
-            logging_level = logging_level,
-            tzone = tzone,
-        )
+        if cls._logger is None:
+            cls._logger = build_logger(
+                logger_name = logger_name,
+                logger_format = logger_format,
+                logging_level = logging_level,
+                tzone = tzone,
+            )
 
 
     @classmethod
