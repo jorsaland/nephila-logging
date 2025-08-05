@@ -6,7 +6,6 @@ dist/
 # Auto-generated files
 **/__pycache__/
 logs/
-.pid
 
 # Local files
 env/
