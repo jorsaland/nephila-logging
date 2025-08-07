@@ -2,8 +2,11 @@ $ErrorActionPreference = "Stop"
 Set-StrictMode -Version Latest
 
 
-Write-Host "=== Nephila Logging ===`n"
-
-
-.\env\Scripts\Activate.ps1
-pip install . --force-reinstall
+Push-Location (Split-Path (Split-Path $MyInvocation.MyCommand.Path -Parent) -Parent)
+try {
+    Write-Host "-- Build Logging package --"
+    Start-Process -FilePath "powershell.exe" -ArgumentList (@("-File", ".\scripts\helpers\_build.ps1") + $args)
+}
+finally {
+    Pop-Location
+}

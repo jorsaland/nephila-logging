@@ -4,8 +4,16 @@
 
 ### Build distribution
 
+#### Linux:
+
 ```
-python setup.py sdist
+./scripts/build.sh [debug]
+```
+
+#### Windows:
+
+```
+.\scripts\build.ps1 [debug]
 ```
 
 ## New features

@@ -4,8 +4,6 @@
 set -euo pipefail
 
 
-echo "=== Nephila Logging ===\n"
-
-
-source ./env/bin/activate
-pip install . --force-reinstall
+cd "$(dirname "$0")/.."
+echo "-- Build Logging package --"
+gnome-terminal -- bash -c "sudo ./scripts/helpers/_build.sh $*"
