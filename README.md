@@ -2,10 +2,10 @@
 
 ## Commands
 
-### Install
+### Build distribution
 
 ```
-pip install [path-to-this-package]
+python setup.py sdist
 ```
 
 ## New features
